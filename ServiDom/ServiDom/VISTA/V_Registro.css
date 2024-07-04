@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+    margin: 0;
+    padding: 0;
+     background-image: url('imagen/prueba.jpg'); /* Reemplaza 'nombre_imagen.jpg' con el nombre real de tu imagen */
+     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+     background-position: center; /* Centra la imagen en el fondo */
+     color: #333;
+}
+
+.container {
+    width: 250%; /* Cambia el ancho del contenedor */
+    max-width: 800px;
+    margin: 190px auto; /* Cambia la distancia superior */
+    padding: 150px;/*el tamaño del marco donde esta el registro*/
+    background-color: rgba(255, 255, 255, 0.9); /* Transparencia */
+    border-radius: 10px; /* Aumenta el radio del borde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aumenta la sombra */
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.botones-registro {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+button {
+    margin: 10px 0; /* Ajusta el margen entre los botones */
+    padding: 20px 100px; /* Ajusta el tamaño de los botones */
+    border: none;
+    border-radius: 5px;
+    padding: 25px 100px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
