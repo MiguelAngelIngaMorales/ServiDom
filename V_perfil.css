@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Alto de la pantalla completa */
+}
+
+.contenedor-perfil {
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 40px; /* Relleno interno */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Para posicionar el botón de retroceso */
+}
+
+.titulo-perfil {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    gap: 20px;
+}
+
+.datos-usuario {
+    flex: 2; /* Los datos del usuario ocupan el doble del espacio */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.datos-usuario p {
+    margin-bottom: 10px; /* Mayor espacio entre párrafos */
+}
+
+.foto-usuario {
+    max-width: 600px; /* Máximo ancho de la foto */
+    overflow: hidden; /* Ocultar el exceso de la imagen si es más grande */
+    flex: 1; /* La foto de usuario ocupa el espacio restante */
+    display: flex;
+    justify-content: flex-end; /* Alinear la imagen a la derecha */
+}
+
+.foto-usuario img {
+    width: 100%; /* Imagen de usuario ocupa todo el espacio de su contenedor */
+    height: auto; /* Altura automática */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around; /* Distribuir los botones horizontalmente */
+    gap: 10px;
+    margin-top: 20px; /* Espacio superior para separar de los datos */
+}
+
+.btn-enviar-mensaje,
+.btn-solicitar-trabajor,
+.btn-valorizar-servicio {
+    flex: 1; /* Los botones ocupan el espacio disponible */
+    padding: 10px 20px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrar el texto del botón */
+}
+
+.btn-enviar-mensaje:hover,
+.btn-solicitar-trabajor:hover,
+.btn-valorizar-servicio:hover {
+    background-color: #0056b3;
+}
+
+.btn-retroceder {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrar el texto del botón */
+}
+
+.btn-retroceder:hover {
+    background-color: #e0e0e0;
+    color: #111;
+}
+
+.btn-solicitar-trabajor.disabled {
+    background-color: #a3a5a5;
+    cursor: not-allowed;
+    pointer-events: none; /* Evita que se pueda hacer clic nuevamente */
+}

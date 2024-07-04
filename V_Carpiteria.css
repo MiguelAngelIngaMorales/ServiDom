@@ -1,0 +1,150 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* Contenedor principal centrado */
+.container {
+    width: 100%;
+    max-width: 1800px; /* Máximo ancho del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Para posicionar el botón de retroceso */
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Centrar texto */
+}
+
+/* Contenedor de la barra lateral y el catálogo */
+.content {
+    display: flex; /* Diseño flexible */
+}
+
+/* Barra lateral (categorías) */
+.sidebar {
+    width: 200px; /* Ancho fijo */
+    background-color: #d9e5f1; /* Color de fondo azul claro */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Título de la barra lateral */
+.sidebar h2 {
+    font-size: 18px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Lista de categorías */
+.sidebar ul {
+    list-style: none; /* Elimina viñetas */
+    padding: 0; /* Elimina padding */
+}
+
+/* Elementos de la lista de categorías */
+.sidebar ul li {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Enlaces de la lista de categorías */
+.sidebar ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333333; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Línea vertical para separar la barra lateral y el catálogo */
+.linea-vertical {
+    width: 2px; /* Ancho de la línea */
+    background-color: #ccc; /* Color de la línea */
+    margin: 0 20px; /* Margen horizontal */
+}
+
+/* Sección del catálogo */
+.catalogo {
+    display: flex; /* Diseño flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    width: calc(100% - 240px); /* Ancho del catálogo, ajustado para incluir margen derecho */
+}
+
+/* Elementos del catálogo */
+.producto {
+    width: calc(33.333% - 20px); /* Ancho de cada producto, 3 por fila */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 1px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Imagen del producto */
+.producto img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Título del producto */
+.producto h3 {
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px 0; /* Espacio superior e inferior */
+}
+
+/* Botón de perfil */
+.btn-perfil {
+    display: flex; /* Diseño flexible */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
+    padding: 10px; /* Espacio interno */
+    background-color: #1877f2; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio superior */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Imagen dentro del botón de perfil */
+.btn-perfil img {
+    width: 16px; /* Ancho de la imagen */
+    height: 16px; /* Altura de la imagen */
+    margin-right: 5px; /* Espacio a la derecha */
+}
+
+/* Hover sobre el botón de perfil */
+.btn-perfil:hover {
+    background-color: #0056b3; /* Cambio de color en hover */
+}
+
+/* Botón de retroceso */
+.btn-retroceder {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrar el texto del botón */
+}
+
+.btn-retroceder:hover {
+    background-color: #e0e0e0;
+    color: #111;
+}
